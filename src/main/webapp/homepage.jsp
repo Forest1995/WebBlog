@@ -109,7 +109,7 @@
       	if (listFivePosts.isEmpty()) {
       		%>
       			<div class="site-heading">
-					<h3>Ooops, it seems that nothing new! Check again later.</h3>
+					<h3>Ooops, it seems that here's nothing new! Check again later or subscribe by email!</h3>
 				</div>
 			<%
 		} else {
