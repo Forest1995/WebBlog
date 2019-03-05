@@ -75,7 +75,7 @@
 					<div class="site-heading">
 						<h1>Blog</h1>
 						<hr class="small">
-						<span class="subheading">Welcome! This is Yuesen and Xiyu's First Blog</span>
+						<span class="subheading">Welcome! This is Yuesen and Xiyu's Blog :D</span>
 					</div>
 				</div>
 			</div>
