@@ -64,7 +64,7 @@
                     <div class="site-heading">
                         <h1>Blog</h1>
                         <hr class="small">
-                        <span class="subheading">Blog</span>
+                        <span class="subheading">Post everything you wanna share with us!</span>
                     </div>
                 </div>
             </div>
@@ -80,15 +80,15 @@
     <div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<div class="post-preview">
-				<h3>Hello, ${fn:escapeXml(user.nickname)}! (Click here to <u><a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">sign out</a></u>.)
+				<h3 style="color:Grey; font-size:30px">Hello, ${fn:escapeXml(user.nickname)}! (Click here to <u><a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">sign out</a></u>.)
 				</h3>			
 				<hr>
 			    <form action="/post" method="POST">
 			      <div><h4 class="post-title">Post Title</h4></div>
-			      <div><textarea name="title" rows = "1" cols = "60"></textarea></div>
+			      <div><textarea name="title" rows = "1" cols = "60" style="background-color:Beige"></textarea></div>
 			      <br>
 			      <h4 class="post-title">Post Content</h4>
-			      <div><textarea name="content" rows="12" cols="60"></textarea></div>
+			      <div><textarea name="content" rows="12" cols="60" style="background-color:Beige"></textarea></div>
 			      <br>
 			      <div><input type="submit" value="Submit New Post" /></div>
 			    </form>

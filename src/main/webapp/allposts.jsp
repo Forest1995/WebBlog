@@ -75,7 +75,7 @@
 					<div class="site-heading">
 						<h1>Blog</h1>
 						<hr class="small">
-						<span class="subheading">Blog</span>
+						<span class="subheading">All the posts are listed below:)</span>
 					</div>
 				</div>
 			</div>
@@ -98,6 +98,7 @@
 	<!-- Main Content -->
 	<div class="container">
 	    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	     <p style="color:Grey; font-size:25px">These are ALL we've got!</p>
 		<%
       	ObjectifyService.register(Post.class);
 		BlogPostsServlet recentPosts = new BlogPostsServlet();

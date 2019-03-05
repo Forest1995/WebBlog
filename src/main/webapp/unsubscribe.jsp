@@ -71,7 +71,9 @@
 					<div class="site-heading">
 						<h1>Blog</h1>
 						<hr class="small">
-						<span class="subheading">Blog</span>
+						<span class="subheading">We will miss you.</span>
+						<span class="subheading"> Please give your feedback to: xiyu_wang@utexas.edu</span>
+						<span class="subheading">We will do better.</span>
 					</div>
 				</div>
 			</div>
@@ -82,10 +84,11 @@
     <div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<div class="post-preview">
-				<h3>We're sorry to see you go! :(</h3>			
+				<h3 style="color:Grey; font-size:30px">We're sorry to see you go! :(</h3>	
+				<br>		
 				   <form action="/unsubscribe" method="POST">
-						<div><h4 class="post-title">Email Address</h4></div>
-						<div><textarea name="unsub_email" rows = "1" cols = "60"></textarea></div>
+						<div><h4 class="post-title">Enter Your Email Address To Unsubscribe:</h4></div>
+						<div><textarea name="unsub_email" rows = "1" cols = "60"  style="background-color:Gainsboro"></textarea></div>
 						<br>
 						<div><input type="submit" value="Unsubscribe" /></div>
 				   </form>

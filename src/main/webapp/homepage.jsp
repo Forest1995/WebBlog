@@ -55,7 +55,7 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="homepage.jsp">Home</a></li>
+                    <li style="color=SaddleBrown"><a href="homepage.jsp">Home</a></li>
                     <li> <a href="subscribe.jsp">Subscribe</a></li>
                     <li><a href="newpost.jsp">New Post</a></li>
                 </ul>
@@ -75,7 +75,7 @@
 					<div class="site-heading">
 						<h1>Blog</h1>
 						<hr class="small">
-						<span class="subheading">Blog</span>
+						<span class="subheading">Welcome! This is Yuesen and Xiyu's First Blog</span>
 					</div>
 				</div>
 			</div>
@@ -98,6 +98,7 @@
 	<!-- Main Content -->
 	<div class="container">
 	    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	    <p style="color:Grey; font-size:25px">These are what we got recently!</p>
 		<%
       	ObjectifyService.register(Post.class);
 		BlogPostsServlet recentPosts = new BlogPostsServlet();
@@ -108,13 +109,14 @@
       	if (listFivePosts.isEmpty()) {
       		%>
       			<div class="site-heading">
-					<h3>No recent posts! Check again later.</h3>
+					<h3>Ooops, it seems that nothing new! Check again later.</h3>
 				</div>
 			<%
 		} else {
       	%>
  			<%
  			// fix: displaying post
+ 			
  			for (Post post : listFivePosts) {
  				pageContext.setAttribute("title", post.getTitle());
  				pageContext.setAttribute("content", post.getContent());

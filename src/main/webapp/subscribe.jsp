@@ -71,34 +71,26 @@
 					<div class="site-heading">
 						<h1>Blog</h1>
 						<hr class="small">
-						<span class="subheading">Blog</span>
+						<span class="subheading">If you like us, just subscribe to get update! :D</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- this is for showing the subscribed email address, to be deleted. -->
-	<%
-		ObjectifyService.register(Subscriber.class);
-		SubscriptionServlet all = new SubscriptionServlet();
-		for (Subscriber subscriber : all.getSubscription()) {
-	%>
-	<p><%=subscriber.email%></p>
-	<%
-		}
-	%>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="post-preview">
-					<h3>Subscribe to our newsletter! Get the latest posts from the
-						past 24 hours.</h3>
+					<h3 style="color:Grey; font-size:30px">Subscribe to our newsletter! 
+					Get the latest posts from the past 24 hours (●'◡'●) with only one step:</h3>
+					<br>
 					<form action="/subscribe" method="POST">
 						<div>
-							<h4 class="post-title">Email Address</h4>
+							<h4 class="post-title">Enter Your Email Address Here:</h4>
 						</div>
 						<div>
-							<textarea name="email" rows="1" cols="60"></textarea>
+							<textarea name="email" rows="1" cols="60"  style="background-color:Gainsboro"></textarea>
 						</div>
 						<br>
 						<div>
@@ -106,11 +98,21 @@
 						</div>
 					</form>
 					<br>
-
-					<h3>
-						...or feel free to <u><a href="unsubscribe.jsp">unsubscribe</a></u>.
+					<p style="color:Grey">Look all these people have subscribed our blog!</p>
+					<%
+						ObjectifyService.register(Subscriber.class);
+						SubscriptionServlet all = new SubscriptionServlet();
+						for (Subscriber subscriber : all.getSubscription()) {
+					%>
+					<p style="color:Grey; font-size:18px"><%=subscriber.email%></p>
+					<%
+						}
+					%>
+					<h3 style="font-size:20px">
+						...or feel free to <u><a href="unsubscribe.jsp">unsubscribe TAT</a></u>.
 					</h3>
 				</div>
 			</div>
 		</div>
 	</div>
+	
